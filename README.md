@@ -6,6 +6,7 @@ The first step is to have the right CSS and JavaScript files. Make sure you are 
 ![Link CSS and JS](https://raw.githubusercontent.com/alvinvoonyn/SqlQueryTabularViewer/master/Screenshots/Link%20CSS%20and%20JS.png)
 
 Configure your MySQL hostname, username, password and the database in the sql_query.php. This PHP must be configured properly in order to communicate to the MySQL server.
+<br />
 ![Configure MySQL Server](https://raw.githubusercontent.com/alvinvoonyn/SqlQueryTabularViewer/master/Screenshots/Configure%20MySQL%20Server.png)
 
 # Include SQL Query Command
