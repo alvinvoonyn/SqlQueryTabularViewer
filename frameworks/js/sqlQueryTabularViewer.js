@@ -28,6 +28,7 @@ app.directive("ngSql", function ($parse, $http) {
         var reverse = false;
         
         scope.search = {};
+        scope.col = "$";
         
         scope.orderBy = function (key) {
             if (reverse === false) {
@@ -45,7 +46,7 @@ app.directive("ngSql", function ($parse, $http) {
     direc.link = linkFunction;
     
     var templateSearch = '<div class="col-xs-3"><label for="search">Search: </label><input type="text" id="search" data-ng-model="search[col]" /></div>';
-    var templateSort = '<div class="col-xs-3"><label for="sort">Filter By: </label><select id="sort" data-ng-model="col"><option data-ng-repeat="(key, result) in data[0]" value="{{key}}">{{key}}</option></select></div>{{msg}}';
+    var templateSort = '<div class="col-xs-3"><label for="sort">Filter By: </label><select id="sort" data-ng-model="col"><option value="$">All</option><option data-ng-repeat="(key, result) in data[0]" value="{{key}}">{{key}}</option></select></div>{{msg}}';
     var templateContent = '<table class="table table-striped"><tr><th data-ng-repeat="(key, result) in data[0]" data-ng-click="orderBy(key)"><a href="">{{key}}</a></th></tr><tr data-ng-repeat="user in data | orderBy:myOrderBy | filter:search"><td data-ng-repeat="field in user">{{field}}</td></tr></table>';
     
     direc.template = '<div class="row">' + templateSearch + templateSort + '</div><br />' + templateContent;
