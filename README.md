@@ -3,7 +3,7 @@ Tabular Data Display, Sortable, Filterable, Searchable and Retrieve from MySQL D
 
 # Basic Setup
 The first step is to have the right CSS and JavaScript files. Make sure you are including the Bootstrap CSS file, as well as the SQL Query Tabular Viewer, jQuery, Bootstrap and AngularJS JavaScript files, in the <head> of your web pages.
-https://raw.githubusercontent.com/alvinvoonyn/SqlQueryTabularViewer/master/Screenshots/Link%20CSS%20and%20JS.png
+![alt text (https://raw.githubusercontent.com/alvinvoonyn/SqlQueryTabularViewer/master/Screenshots/Link%20CSS%20and%20JS.png)
 
 jQuery, Bootstrap and AngularJS must be loaded before SQL Query Tabular Viewer JavaScript.
 
