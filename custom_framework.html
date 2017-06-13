@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="myApp" data-ng-cloak>
+<head>
+    <title>My Custom Framework</title>
+    <meta name="viewport" content="width=device-width, initialscale=1.0"/>
+    <!-- Bootstrap -->
+    <link href="frameworks/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="frameworks/js/html5shiv.js"></script>
+        <script src="frameworks/js/respond.min.js"></script>
+    <![endif]-->
+</head>  
+<body data-ng-controller="myCtrl">
+    
+    <div class="container">
+        
+        <!-- View Data in table form -->
+        <div data-ng-sql="SELECT * FROM user"></div>
+        
+        <!-- Example of Insert Query -->
+        <!--
+        <div data-ng-sql="INSERT INTO user (student_id, name, age) VALUES (100075024, 'Desmond Liew', 22)"></div>
+        -->
+        
+        <!-- Example of Update Query -->
+        <!--
+        <div data-ng-sql="UPDATE user SET age = 23 WHERE student_id = 100075066"></div>
+        -->
+        
+        <!-- Example of Delete Query -->
+        <!--
+        <div data-ng-sql="DELETE FROM user WHERE student_id = 100075066"></div>
+        -->
+        
+        <div data-ng-view></div>
+        
+    </div>
+    
+    <!-- jQuery – required for Bootstrap's JavaScript plugins) -->
+    <script src="frameworks/js/jquery.min.js"></script>
+    <!-- All Bootstrap plug-ins file -->
+    <script src="frameworks/js/bootstrap.min.js"></script>
+    <!-- AngularJS -->
+    <script src="frameworks/js/angular.min.1.6.4.js"></script>
+    <!-- AngularJS Route -->
+    <script src="frameworks/js/angular-route.min.1.6.4.js"></script>
+    <!-- My Framework -->
+    <script src="frameworks/js/sqlQueryTabularViewer.js"></script>
+</body>
+</html>
