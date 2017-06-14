@@ -26,3 +26,6 @@ The data can be sorted to ascending or descending order. You can change the orde
 # Filterable
 The data can be filtered by entering the data you want to search along with the column you want to filter with.
 ![Filter](https://raw.githubusercontent.com/alvinvoonyn/SqlQueryTabularViewer/master/Screenshots/Filter.png)
+
+# About
+The "SqlQueryTabularViewer" library was developed as partial fulfilment for completion of unit COS30043 – Interface Design & Development offered in Swinburne University of Technology, Sarawak Campus in Semester 1, 2017.
