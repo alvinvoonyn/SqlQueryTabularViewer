@@ -17,24 +17,7 @@
     <div class="container">
         
         <!-- View Data in table form -->
-        <div data-ng-sql="SELECT * FROM user"></div>
-        
-        <!-- Example of Insert Query -->
-        <!--
-        <div data-ng-sql="INSERT INTO user (student_id, name, age) VALUES (100075024, 'Desmond Liew', 22)"></div>
-        -->
-        
-        <!-- Example of Update Query -->
-        <!--
-        <div data-ng-sql="UPDATE user SET age = 23 WHERE student_id = 100075066"></div>
-        -->
-        
-        <!-- Example of Delete Query -->
-        <!--
-        <div data-ng-sql="DELETE FROM user WHERE student_id = 100075066"></div>
-        -->
-        
-        <div data-ng-view></div>
+        <sql2table query="SELECT * FROM test"></sql2table>
         
     </div>
     
@@ -47,6 +30,7 @@
     <!-- AngularJS Route -->
     <script src="frameworks/js/angular-route.min.1.6.4.js"></script>
     <!-- My Framework -->
-    <script src="frameworks/js/sqlQueryTabularViewer.js"></script>
+    <script src="frameworks/js/sql2table.js"></script> 
+    
 </body>
 </html>
